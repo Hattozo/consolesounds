@@ -1,9 +1,7 @@
-# Fabric Example Mod
+# Console Sounds
 
-## Setup
-
-For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
+This mod just adds the sounds from the XBOX 360 and PlayStation 3 versions of Minecraft to its original counterpart.
 
 ## License
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+This mod is available under the MIT license. The license must be incorporated in your projects if you want to use this.
