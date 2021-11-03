@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.hattolo.consolesounds.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+  ],
+  "client": [
+    "SelectClickableWidgetMixin",
+    "ExitScreenMixin",
+    "CloseScreenMixin",
+    "CloseHandledScreenMixin",
+    "OpenHandledScreenMixin",
+    "ClickHandledScreenMixin",
+    "ClickCreativeInventoryScreenMixin",
+    "CraftItemStackMixin",
+    "OpenPauseMenuMixin",
+    "ScrollSliderWidgetMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
