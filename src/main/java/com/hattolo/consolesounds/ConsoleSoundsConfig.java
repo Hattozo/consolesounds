@@ -20,7 +20,7 @@ public class ConsoleSoundsConfig implements ConfigData {
     public boolean playSoundOnPauseMenu = true;
     @Comment("Plays the click sound whenever you open an in-game menu, like a crafting table or your inventory.")
     public boolean playSoundOnInGameMenu = true;
-    @Comment("Plays the back sound whenever you close a menu, like a crafting table or your inventory.")
+    @Comment("Plays the back sound whenever you close a menu.")
     public boolean playSoundOnMenuExit = true;
     @Comment("Plays the back sound whenever you close an in-game menu, like a crafting table or your inventory.")
     public boolean playSoundOnInGameMenuExit = true;
