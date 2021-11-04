@@ -16,18 +16,18 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public class ExitScreenMixin {
     @Inject(at = @At("RETURN"), method = "keyPressed")
     private void keyPressed(int keyCode, int scanCode, int modifiers, CallbackInfoReturnable<Boolean> cir) {
-        //System.out.println("Lel");
+        //System.out.println("Key pressed");
         if (cir.getReturnValue()) {
-            if (keyCode == GLFW.GLFW_KEY_BACKSPACE || keyCode == GLFW.GLFW_KEY_DELETE || keyCode == GLFW.GLFW_KEY_HOME || keyCode == GLFW.GLFW_KEY_END || keyCode == GLFW.GLFW_KEY_LEFT || keyCode == GLFW.GLFW_KEY_RIGHT) return;
+            if (keyCode == GLFW.GLFW_KEY_ENTER || keyCode == GLFW.GLFW_KEY_KP_ENTER || keyCode == GLFW.GLFW_KEY_BACKSPACE || keyCode == GLFW.GLFW_KEY_DELETE || keyCode == GLFW.GLFW_KEY_HOME || keyCode == GLFW.GLFW_KEY_END || keyCode == GLFW.GLFW_KEY_LEFT || keyCode == GLFW.GLFW_KEY_RIGHT || keyCode == GLFW.GLFW_KEY_UP || keyCode == GLFW.GLFW_KEY_DOWN) return;
             if (modifiers == GLFW.GLFW_MOD_CONTROL) return;
 
-            //System.out.println("Escaped!");
+            //System.out.println("Play sound");
             if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().playSoundOnMenuExit) MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsClient.UI_BACK_EVENT, 1.0F));
         }
         /*
-        System.out.println("Lel");
+        System.out.println("Key pressed");
         if (keyCode == GLFW.GLFW_KEY_ESCAPE && Screen.shouldCloseOnEsc()) {
-            System.out.println("Escaped!");
+            System.out.println("Play sound");
             MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleModClient.UI_BACK_EVENT, 1.0F));
         }
          */
