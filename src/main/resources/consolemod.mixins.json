@@ -14,6 +14,7 @@
     "ClickHandledScreenMixin",
     "ClickCreativeInventoryScreenMixin",
     "CraftItemStackMixin",
+    "SlotClickedRecipeBookMixin",
     "OpenPauseMenuMixin",
     "ScrollSliderWidgetMixin"
   ],
