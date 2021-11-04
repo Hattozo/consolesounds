@@ -29,7 +29,7 @@ public class SelectClickableWidgetMixin {
 			if (!widget.active) return;
 			if (!selected) {
 				selected = true;
-				if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().enableHoverSounds) MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsClient.UI_SELECT_EVENT, randFloat(0.9f, 1.1f)));
+				if (AutoConfig.getConfigHolder(ConsoleSoundsConfig.class).getConfig().enableHoverSounds) MinecraftClient.getInstance().getSoundManager().play(PositionedSoundInstance.master(ConsoleSoundsClient.UI_SELECT_EVENT, randFloat(0.95f, 1.05f)));
 			}
 		}
 		else {
